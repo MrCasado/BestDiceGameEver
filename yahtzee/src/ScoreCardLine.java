@@ -51,27 +51,15 @@ public class ScoreCardLine {
         score(new YahtzeeDice(dice1,dice2,dice3,dice4,dice5));
     }
     public void score (YahtzeeDice dice){
+        setHasBeenScored(true);
         if (!isValid(dice))
             return;
         switch (category){
             case CHANCE:
             case ONE_PAIR:
-<<<<<<< HEAD
                 score += dice.getTotal();
         }
-    }
-=======
-				score += dice1.getFaceValue();
-				score += dice2.getFaceValue();
-				score += dice3.getFaceValue();
-				score += dice4.getFaceValue();
-				score += dice5.getFaceValue();
-				
-			
-		}
-		setHasBeenScored(true);
 	}
->>>>>>> 521f7baf4963fcd22ee1d5d03ad22edffea9f226
 
     public boolean isValid (YahtzeeDice yahtzeeDice)
     {
