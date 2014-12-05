@@ -16,7 +16,8 @@ public class ScoreCardAssembler {
 		card.addLine(new ScoreCardLine("Large Straight", "Scored as 40 points"));
 		card.addLine(new ScoreCardLine("Full House", "Scored as 25 points"));
 		card.addLine(new ScoreCardLine("Yahtzee", "Scored as 50 points"));*/
-		card.addLine(new ScoreCardLine(Category.CHANCE, "Chance", "Scored as total of all dice"));
+        card.addLine(new ScoreCardLine(Category.CHANCE, "Chance", "Scored as total of all dice"));
+        card.addLine(new ScoreCardLine(Category.ONE_PAIR, "One Pair", "Scored as total of all dice"));
 		return card;
 	}
 

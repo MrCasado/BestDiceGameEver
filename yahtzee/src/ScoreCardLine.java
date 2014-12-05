@@ -29,9 +29,12 @@ public class ScoreCardLine {
 	public void setCategory(Category category) {
 		this.category = category;
 	}
-	public int getScore() {
-		return score;
-	}
+    public int getScore() {
+        return score;
+    }
+    public void setScore(int score) {
+        this.score=score;
+    }
 	public void score (Dice dice1, Dice dice2, Dice dice3, Dice dice4, Dice dice5){
 		switch (category){
 			case CHANCE: 

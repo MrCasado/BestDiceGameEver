@@ -1,2 +1,2 @@
 
-enum Category{ CHANCE }
+enum Category{ CHANCE, ONE_PAIR }
