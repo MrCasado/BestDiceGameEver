@@ -32,7 +32,8 @@ public class Console implements ConsoleInterface {
 		    try {
 				response = bufferRead.readLine();
 			} catch (IOException e) {
-				writeLineToConSoleWithNewLine("unable to read input");
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
 		 return response;
 	}
