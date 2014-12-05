@@ -6,17 +6,11 @@ public class YahtzeeDiceTest {
     @Test
     public void dice_total_returns_sum_of_dice() {
 
-        Dice dice1 = new Dice();
-        Dice dice2 = new Dice();
-        Dice dice3 = new Dice();
-        Dice dice4 = new Dice();
-        Dice dice5 = new Dice();
-
-        dice1.setFaceValue(2);
-        dice2.setFaceValue(6);
-        dice3.setFaceValue(3);
-        dice4.setFaceValue(4);
-        dice5.setFaceValue(5);
+        Dice dice1 = new Dice(2);
+        Dice dice2 = new Dice(6);
+        Dice dice3 = new Dice(3);
+        Dice dice4 = new Dice(4);
+        Dice dice5 = new Dice(5);
 
         int expected = 20;
 
@@ -34,17 +28,11 @@ public class YahtzeeDiceTest {
     @Test
          public void dice_total_for_1_returns_sum_of_1s() {
 
-        Dice dice1 = new Dice();
-        Dice dice2 = new Dice();
-        Dice dice3 = new Dice();
-        Dice dice4 = new Dice();
-        Dice dice5 = new Dice();
-
-        dice1.setFaceValue(2);
-        dice2.setFaceValue(1);
-        dice3.setFaceValue(3);
-        dice4.setFaceValue(1);
-        dice5.setFaceValue(5);
+        Dice dice1 = new Dice(2);
+        Dice dice2 = new Dice(1);
+        Dice dice3 = new Dice(3);
+        Dice dice4 = new Dice(1);
+        Dice dice5 = new Dice(5);
 
         int expected = 2;
 

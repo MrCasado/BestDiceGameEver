@@ -39,19 +39,19 @@ public class ScoreCardLine {
     public void setScore(int score) {
         this.score=score;
     }
-	public void score (Dice dice1, Dice dice2, Dice dice3, Dice dice4, Dice dice5){
-		switch (category){
-			case CHANCE:
+    @Deprecated
+    public void score (Dice dice1, Dice dice2, Dice dice3, Dice dice4, Dice dice5){
+        score(new YahtzeeDice(dice1,dice2,dice3,dice4,dice5));
+    }
+    public void score (YahtzeeDice dice){
+        if (!isValid(dice))
+            return;
+        switch (category){
+            case CHANCE:
             case ONE_PAIR:
-				score += dice1.getFaceValue();
-				score += dice2.getFaceValue();
-				score += dice3.getFaceValue();
-				score += dice4.getFaceValue();
-				score += dice5.getFaceValue();
-				
-			
-		}
-	}
+                score += dice.getTotal();
+        }
+    }
 
     public boolean isValid (YahtzeeDice yahtzeeDice)
     {
