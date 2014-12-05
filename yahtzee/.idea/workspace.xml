@@ -6,13 +6,14 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Yahtzee.java" changelist="9822fddd-5e4e-4875-852a-1bb09deed604" time="1417789761344" ignored="false" />
     <file path="/YahtzeeDiceTest.java" changelist="9822fddd-5e4e-4875-852a-1bb09deed604" time="1417786825261" ignored="false" />
-    <file path="/YahtzeeDice.java" changelist="9822fddd-5e4e-4875-852a-1bb09deed604" time="1417787067010" ignored="false" />
+    <file path="/YahtzeeDice.java" changelist="9822fddd-5e4e-4875-852a-1bb09deed604" time="1417791200956" ignored="false" />
     <file path="/Category.java" changelist="9822fddd-5e4e-4875-852a-1bb09deed604" time="1417787125792" ignored="false" />
     <file path="/ScoreCardAssembler.java" changelist="9822fddd-5e4e-4875-852a-1bb09deed604" time="1417787138094" ignored="false" />
     <file path="/ScoreCardAssemblerTest.java" changelist="9822fddd-5e4e-4875-852a-1bb09deed604" time="1417787772926" ignored="false" />
     <file path="/ScoreCard.java" changelist="9822fddd-5e4e-4875-852a-1bb09deed604" time="1417788612296" ignored="false" />
     <file path="/ScoreCardTest.java" changelist="9822fddd-5e4e-4875-852a-1bb09deed604" time="1417788371721" ignored="false" />
-    <file path="/ScoreCardLine.java" changelist="9822fddd-5e4e-4875-852a-1bb09deed604" time="1417788157986" ignored="false" />
+    <file path="/ScoreCardLine.java" changelist="9822fddd-5e4e-4875-852a-1bb09deed604" time="1417791615243" ignored="false" />
+    <file path="/ScoreCardLineTest.java" changelist="9822fddd-5e4e-4875-852a-1bb09deed604" time="1417791529947" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,20 +112,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScoreCardLineTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ScoreCardLineTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ScoreCardLineTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="164" selection-end="309" vertical-scroll-proportion="0.0">
+            <state line="43" column="0" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.16666667">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScoreCardLine.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ScoreCardLine.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ScoreCardLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="78" selection-start="447" selection-end="447" vertical-scroll-proportion="0.7407407">
-              <folding />
+            <state line="44" column="12" selection-start="1020" selection-end="1020" vertical-scroll-proportion="-6.923077">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,7 +135,7 @@
       <file leaf-file-name="YahtzeeDice.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/YahtzeeDice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="21" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0">
+            <state line="40" column="31" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,14 +186,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/YahtzeeDiceTest.java" />
-        <option value="$PROJECT_DIR$/src/YahtzeeDice.java" />
         <option value="$PROJECT_DIR$/src/Category.java" />
         <option value="$PROJECT_DIR$/src/ScoreCardAssembler.java" />
         <option value="$PROJECT_DIR$/src/ScoreCardAssemblerTest.java" />
-        <option value="$PROJECT_DIR$/src/ScoreCardLine.java" />
         <option value="$PROJECT_DIR$/src/ScoreCardTest.java" />
         <option value="$PROJECT_DIR$/src/ScoreCard.java" />
         <option value="$PROJECT_DIR$/src/Yahtzee.java" />
+        <option value="$PROJECT_DIR$/src/YahtzeeDice.java" />
+        <option value="$PROJECT_DIR$/src/ScoreCardLineTest.java" />
+        <option value="$PROJECT_DIR$/src/ScoreCardLine.java" />
       </list>
     </option>
   </component>
@@ -301,30 +305,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Yahtzee">
-    <configuration default="false" name="YahtzeeDiceTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="yahtzee" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="YahtzeeDiceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ScoreCardLineTest">
     <configuration default="false" name="ScoreCardAssemblerTest" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="yahtzee" />
@@ -401,6 +382,29 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="yahtzee" />
       <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ScoreCardLineTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="yahtzee" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ScoreCardLineTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -497,19 +501,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.YahtzeeDiceTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ScoreCardAssemblerTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ScoreCardTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Yahtzee" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Console" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ScoreCardAssemblerTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ScoreCardTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Yahtzee" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Console" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ScoreCardLineTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Yahtzee" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Console" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ScoreCardTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ScoreCardAssemblerTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.YahtzeeDiceTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ScoreCardLineTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Yahtzee" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Console" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ScoreCardTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ScoreCardAssemblerTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -545,7 +549,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="24" width="1282" height="753" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -566,7 +570,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495935" sideWeight="0.67445743" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32554257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32554257" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -678,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ScoreCardLineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="164" selection-end="309" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ScoreCardAssemblerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="45" selection-start="533" selection-end="533" vertical-scroll-proportion="-9.807693">
@@ -720,25 +717,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/YahtzeeDice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="21" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Console.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="7" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConsoleInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -759,9 +740,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/YahtzeeDice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="31" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConsoleInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="17" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ScoreCardLine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="78" selection-start="447" selection-end="447" vertical-scroll-proportion="0.7407407">
+        <state line="44" column="12" selection-start="1020" selection-end="1020" vertical-scroll-proportion="-6.923077">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ScoreCardLineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.16666667">
           <folding />
         </state>
       </provider>

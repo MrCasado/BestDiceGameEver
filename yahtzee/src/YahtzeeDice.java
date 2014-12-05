@@ -38,5 +38,9 @@ public class YahtzeeDice {
         return (dice1.getFaceValue() + dice2.getFaceValue() + dice3.getFaceValue() + dice4.getFaceValue() + dice5.getFaceValue());
     }
 
+    public List<Dice> getDice(){
+        return Arrays.asList(dice1, dice2, dice3, dice4, dice5);
+    }
+
 
 }

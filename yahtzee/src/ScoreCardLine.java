@@ -1,3 +1,7 @@
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class ScoreCardLine {
 	
 	private String name;
@@ -44,7 +48,8 @@ public class ScoreCardLine {
     }
 	public void score (Dice dice1, Dice dice2, Dice dice3, Dice dice4, Dice dice5){
 		switch (category){
-			case CHANCE: 
+			case CHANCE:
+            case ONE_PAIR:
 				score += dice1.getFaceValue();
 				score += dice2.getFaceValue();
 				score += dice3.getFaceValue();
@@ -55,4 +60,31 @@ public class ScoreCardLine {
 		}
 		setHasBeenScored(true);
 	}
+
+    public boolean isValid (YahtzeeDice yahtzeeDice)
+    {
+        switch (category){
+            case CHANCE:
+                return true;
+            case ONE_PAIR:
+                Integer[] map = new Integer[6];
+
+                for(int i=0;i<6;i++)
+                {
+                    map[i]=0;
+                }
+                List<Dice> dice = yahtzeeDice.getDice();
+                for (Dice die: dice)
+                {
+                    map[die.getFaceValue()]++;
+                }
+                for(int i=0;i<6;i++)
+                {
+                    if (map[i]>1)
+                        return true;
+                }
+                return false;
+        }
+        return false;
+    }
 }
