@@ -8,7 +8,14 @@ public class ScoreCardLine {
 	private String description;
 	private Category category;
 	private int score = 0;
+	private boolean hasBeenScored = false;
 	
+	public boolean hasBeenScored() {
+		return hasBeenScored;
+	}
+	public void setHasBeenScored(boolean hasBeenScored) {
+		this.hasBeenScored = hasBeenScored;
+	}
 	public ScoreCardLine(Category category, String name, String description) {
 		super();
 		this.setCategory(category);
@@ -49,9 +56,22 @@ public class ScoreCardLine {
         switch (category){
             case CHANCE:
             case ONE_PAIR:
+<<<<<<< HEAD
                 score += dice.getTotal();
         }
     }
+=======
+				score += dice1.getFaceValue();
+				score += dice2.getFaceValue();
+				score += dice3.getFaceValue();
+				score += dice4.getFaceValue();
+				score += dice5.getFaceValue();
+				
+			
+		}
+		setHasBeenScored(true);
+	}
+>>>>>>> 521f7baf4963fcd22ee1d5d03ad22edffea9f226
 
     public boolean isValid (YahtzeeDice yahtzeeDice)
     {
