@@ -1,0 +1,16 @@
+
+import org.junit.*;
+import static org.junit.Assert.*;
+
+public class DiceTest {
+	
+    @Test
+    public void duplicate_is_not_added_to_list() {
+        RecentlyUsedList.addFileName("file.xml");
+        int firstListSize = RecentlyUsedList.getListSize();
+        RecentlyUsedList.addFileName("file.xml");
+        int secondListSize = RecentlyUsedList.getListSize();
+        assertTrue(firstListSize == secondListSize);
+    }
+
+}

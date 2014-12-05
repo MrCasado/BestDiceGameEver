@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="DiceTest" project="yahtzee" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="DiceTest" time="0.0">
+    <testcase name="dice_rolls_between_one_and_six" classname="DiceTest" time="0.0"/>
+  </testsuite>
+</testrun>

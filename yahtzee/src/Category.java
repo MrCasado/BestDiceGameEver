@@ -1,0 +1,2 @@
+
+enum Category{ CHANCE }
