@@ -7,7 +7,7 @@ public class Yahtzee {
 	
 	public static void main (String[] args)
 	   {
-
+          //testing github
 	      Dice dice1 = new Dice();
 	      Dice dice2 = new Dice();
 	      Dice dice3 = new Dice();
