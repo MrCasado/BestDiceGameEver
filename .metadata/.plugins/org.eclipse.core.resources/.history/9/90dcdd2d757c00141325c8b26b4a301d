@@ -43,7 +43,7 @@ public class Yahtzee {
 	      int i=1;
 	      for(ScoreCardLine line : scoreCardLines) {
 		      line.score(dice1, dice2, dice3, dice4, dice5);
-	    	    System.out.println(i++ + " " + line.getName() + ": " + line.getDescription() + " - Score: " + line.getScore());
+	    	    System.out.println(i++ + " " + line.getName() + ": " + line.getDescription());
 	    	}
 
 	      

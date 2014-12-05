@@ -29,23 +29,23 @@ public class Yahtzee {
 	      			" " + dice5.getFaceValue());
 	      
 	      
-	      //ScoreCardLine line = new ScoreCardLine(Category.CHANCE, "", "");
+	      ScoreCardLine line = new ScoreCardLine(Category.CHANCE, "", "");
 	    	
 	    	
+	      line.score(dice1, dice2, dice3, dice4, dice5);
 	      
-	      //System.out.println("Your CHANCE LINE SCORE is " + line.getScore());
+	      System.out.println("Your CHANCE LINE SCORE is " + line.getScore());
 	      
-	      ScoreCardAssembler scoreCardAssembler = new ScoreCardAssembler();
-	      ScoreCard scoreCard = scoreCardAssembler.assembleScoreCard();
-	     
-	      List<ScoreCardLine> scoreCardLines = scoreCard.getScoreCardLines();
-	      
-	      int i=1;
-	      for(ScoreCardLine line : scoreCardLines) {
-		      line.score(dice1, dice2, dice3, dice4, dice5);
-	    	    System.out.println(i++ + " " + line.getName() + ": " + line.getDescription() + " - Score: " + line.getScore());
-	    	}
-
+//	      ScoreCardAssembler scoreCardAssembler = new ScoreCardAssembler();
+//	      ScoreCard scoreCard = scoreCardAssembler.assembleScoreCard();
+//	     
+//	      List<ScoreCardLine> scoreCardLines = scoreCard.getScoreCardLines();
+//	      
+//	      int i=1;
+//	      for(ScoreCardLine line : scoreCardLines) {
+//	    	    System.out.println(i++ + " " + line.getName() + ": " + line.getDescription());
+//	    	}
+//
 	      
 	      
 	   }
