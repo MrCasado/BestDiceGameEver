@@ -19,12 +19,13 @@ public class ScoreCard {
         this.scoreCardLines = scoreCardLines;
     }
 
+    
     public int getTotal(){
-         int total = 0;
-         for(ScoreCardLine line : scoreCardLines)
-             total += line.getScore();
-         return total;
+        int total = 0;
+        for(ScoreCardLine line : scoreCardLines)
+            total += line.getScore();
+        return total;
 
-    }
+   }
 
 }

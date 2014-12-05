@@ -4,7 +4,14 @@ public class ScoreCardLine {
 	private String description;
 	private Category category;
 	private int score = 0;
+	private boolean hasBeenScored = false;
 	
+	public boolean hasBeenScored() {
+		return hasBeenScored;
+	}
+	public void setHasBeenScored(boolean hasBeenScored) {
+		this.hasBeenScored = hasBeenScored;
+	}
 	public ScoreCardLine(Category category, String name, String description) {
 		super();
 		this.setCategory(category);
@@ -46,5 +53,6 @@ public class ScoreCardLine {
 				
 			
 		}
+		setHasBeenScored(true);
 	}
 }

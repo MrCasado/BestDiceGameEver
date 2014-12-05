@@ -1,0 +1,97 @@
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.List;
+
+public class Yahtzee {
+
+
+    Console console = new Console();
+    
+    public static void main (String[] args)
+	   {
+
+
+
+
+
+	      Dice dice1 = new Dice();
+	      Dice dice2 = new Dice();
+	      Dice dice3 = new Dice();
+	      Dice dice4 = new Dice();
+	      Dice dice5 = new Dice();
+
+	      dice1.roll();
+	      dice2.roll();
+	      dice3.roll();
+	      dice4.roll();
+	      dice5.roll();
+
+          ScoreCard card;
+	      ScoreCardAssembler scoreCardAssembler = new ScoreCardAssembler();
+	      card = scoreCardAssembler.assembleScoreCard();
+	      
+	      console.writeLineToConSoleWithNewLine("Your roll is : " +
+	      		          dice1.getFaceValue() + 
+	    		    " " + dice2.getFaceValue() +
+	      			" " + dice3.getFaceValue() +
+	      			" " + dice4.getFaceValue() +
+	      			" " + dice5.getFaceValue());
+
+	      printScoreCard(card, console);
+	      console.writeLineToConSoleWithPrompt("Please choose a card");
+	      String chosenCard = console.readLineFromConsole();
+	      
+	      boolean validCardProvided = false;
+	      while ( validCardProvided == false )
+	      {	  
+		      try 
+		      {
+		    	  int cardNumber = new Integer(chosenCard);
+		    	  validCardProvided = true;
+		      }
+		      catch ( Exception e)
+		      {
+		    	  printScoreCard(card, console);
+		    	  console.writeLineToConSoleWithNewLine("Please enter valid card number");
+		    	  console.writeLineToConSoleWithPrompt("Please choose a card");
+			      chosenCard = console.readLineFromConsole();
+			      int cardNumber = new Integer(chosenCard);
+		      }
+	      }    
+	      //console.writeLineToConSoleWithNewLine(chosenCard);
+	      
+	      
+           List<ScoreCardLine> scoreCardLines = card.getScoreCardLines();
+           int i=1;
+           for(ScoreCardLine line : scoreCardLines) {
+               //line.score(dice1, dice2, dice3, dice4, dice5);
+            }
+          
+
+
+
+	      
+	      
+	   }
+
+    private int readCardChoice() throws NumberFormatException
+    {
+  	  	  console.writeLineToConSoleWithPrompt("Please choose a card");
+	      chosenCard = console.readLineFromConsole();
+	      int cardNumber = new Integer(chosenCard);
+	      return cardNumber;
+    }
+    
+    private static void printScoreCard(ScoreCard card, Console console)
+    {
+        List<ScoreCardLine> scoreCardLines = card.getScoreCardLines();
+
+        int i=1;
+        for(ScoreCardLine line : scoreCardLines) {
+            //line.score(dice1, dice2, dice3, dice4, dice5);
+            console.writeLineToConSoleWithNewLine(i++ + " " + line.getName() + ": " + line.getDescription() + ". Scored : " + line.hasBeenScored() + " - Score: " + line.getScore() );
+        }
+    }
+
+}
