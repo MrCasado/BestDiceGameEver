@@ -10,9 +10,21 @@ public class ScoreCard {
 	{
 		scoreCardLines.add(line);
 	}
-	
-	public List<ScoreCardLine> getScoreCardLines() {
-		return scoreCardLines;
-	}
+
+    public List<ScoreCardLine> getScoreCardLines() {
+        return scoreCardLines;
+    }
+
+    public void setScoreCardLines(List<ScoreCardLine> scoreCardLines) {
+        this.scoreCardLines = scoreCardLines;
+    }
+
+    public int getTotal(){
+         int total = 0;
+         for(ScoreCardLine line : scoreCardLines)
+             total += line.getScore();
+         return total;
+
+    }
 
 }
