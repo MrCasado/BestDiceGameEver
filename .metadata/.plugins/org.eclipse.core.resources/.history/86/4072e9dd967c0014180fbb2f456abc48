@@ -51,7 +51,7 @@ public class ScoreCardLineTest {
         Dice dice2 = new Dice(2);
         Dice dice3 = new Dice(4);
         Dice dice4 = new Dice(5);
-        Dice dice5 = new Dice(6);
+        Dice dice5 = new Dice(1);
 
         ScoreCardLine line = new ScoreCardLine(Category.ONE_PAIR, "", "");
 

@@ -67,9 +67,9 @@ public class ScoreCardLine {
             case CHANCE:
                 return true;
             case ONE_PAIR:
-                Integer[] map = new Integer[7];
+                Integer[] map = new Integer[6];
 
-                for(int i=1;i<=6;i++)
+                for(int i=0;i<6;i++)
                 {
                     map[i]=0;
                 }
@@ -78,7 +78,7 @@ public class ScoreCardLine {
                 {
                     map[die.getFaceValue()]++;
                 }
-                for(int i=1;i<=6;i++)
+                for(int i=0;i<6;i++)
                 {
                     if (map[i]>1)
                         return true;

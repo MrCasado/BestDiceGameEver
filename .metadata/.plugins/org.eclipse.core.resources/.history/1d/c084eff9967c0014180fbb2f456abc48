@@ -67,7 +67,7 @@ public class ScoreCardLine {
             case CHANCE:
                 return true;
             case ONE_PAIR:
-                Integer[] map = new Integer[7];
+                Integer[] map = new Integer[6];
 
                 for(int i=1;i<=6;i++)
                 {

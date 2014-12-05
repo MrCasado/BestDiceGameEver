@@ -53,7 +53,7 @@ public class Yahtzee {
 		    	  
 		    	  if ( (cardChoice -1) > scoreCardLines.size() )
 		    	  {
-		    		  console.writeLineToConSoleWithNewLine("Please select a category number from the list");
+		    		  console.writeLineToConSoleWithNewLine("Please select a card number from the list");
 		    		  continue;		    		  
 		    	  }
 		    	  
@@ -62,13 +62,13 @@ public class Yahtzee {
 		    	  
 		    	  if ( scoreCardLine == null )
 		    	  {
-		    		  console.writeLineToConSoleWithNewLine("Please enter valid category number");
+		    		  console.writeLineToConSoleWithNewLine("Please enter valid card number");
 		    		  continue;
 		    	  }
 		    	  
 		    	  if ( scoreCardLine.hasBeenScored() == true )
 		    	  {
-		    		  console.writeLineToConSoleWithNewLine("This category has been scored");
+		    		  console.writeLineToConSoleWithNewLine("This card has been scored");
 		    		  continue;
 		    	  }
 		    		  
@@ -96,7 +96,7 @@ public class Yahtzee {
 
     private static int readCardChoice(Console console) throws NumberFormatException
     {
-  	  	  console.writeLineToConSoleWithPrompt("Please choose a category");
+  	  	  console.writeLineToConSoleWithPrompt("Please choose a card");
 	      String chosenCard = console.readLineFromConsole();
 	      int cardNumber = new Integer(chosenCard);
 	      return cardNumber;
@@ -109,14 +109,7 @@ public class Yahtzee {
         int i=1;
         for(ScoreCardLine line : scoreCardLines) {
             //line.score(dice1, dice2, dice3, dice4, dice5);
-        	if ( line.hasBeenScored() == true )
-        	{	
-        		console.writeLineToConSoleWithNewLine(i++ + " " + line.getName() + ": " + line.getScore() );
-        	}
-        	else
-        	{
-        		console.writeLineToConSoleWithNewLine(i++ + " " + line.getName() + ": ");
-        	}
+            console.writeLineToConSoleWithNewLine(i++ + " " + line.getName() + ": " + line.getDescription() + ". Scored : " + line.hasBeenScored() + " - Score: " + line.getScore() );
         }
     }
 

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="Rerun ScoreCardLineTest.do_not_score_not_one_pair_as_total" project="yahtzee" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="do_not_score_not_one_pair_as_total" classname="ScoreCardLineTest" time="29.932"/>
+</testrun>
