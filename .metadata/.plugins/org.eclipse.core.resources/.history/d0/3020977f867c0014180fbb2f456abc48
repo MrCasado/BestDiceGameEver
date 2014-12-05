@@ -1,0 +1,24 @@
+
+import org.junit.*;
+
+import static org.junit.Assert.*;
+
+public class ConsoleTest {
+	
+	  @Test
+	  public void write_to_console() {
+	    	
+	    }
+	  
+	  @Test
+	  public void read_from_console() {
+		  
+		  ConsoleStub consoleStub = new ConsoleStub();
+		  String line = consoleStub.readLineFromConsole();
+		  assertNotNull(line);
+		  assertTrue(line.length() > 0 );
+		  
+	  }
+	
+
+}

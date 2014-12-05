@@ -1,0 +1,45 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+public class Console {
+
+	private static String PROMPT = " $: ";
+	
+	public void writeToConSoleWithPrompt(String output)
+	{
+		System.out.print(output + PROMPT);
+	}
+	
+	public void writeToConSoleWithNewLine(String output)
+	{
+		System.out.println(output);
+	}
+
+	
+	
+	public String readLineFromConsole()
+	{
+		String response = "";
+		BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
+		    try {
+				response = bufferRead.readLine();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		 return response;
+	}
+	
+	public static void main (String[] args)
+	{
+		Console console = new Console();
+		console.writeToConSole("Please select a category");
+		String response = console.readFromConsole();
+		System.out.println("Read " + response);
+	}
+	
+	
+	
+}

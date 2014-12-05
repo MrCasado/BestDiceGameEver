@@ -1,0 +1,17 @@
+
+import org.junit.*;
+
+import static org.junit.Assert.*;
+
+public class ConsoleTest {
+	
+	  public void write_to_console() {
+	    	
+	    }
+	  
+	  public void read_from_console() {
+		  
+	  }
+	
+
+}

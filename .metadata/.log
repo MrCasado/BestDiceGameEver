@@ -123,3 +123,12 @@ org.eclipse.core.commands.ExecutionException: No activeWorkbenchWindow found whi
 
 !ENTRY org.eclipse.jdt.core 4 969 2014-12-05 11:25:19.001
 !MESSAGE score_chance_as_() [in DiceTest [in [Working copy] DiceTest.java [in <default> [in src [in yahtzee]]]]] does not exist
+!SESSION 2014-12-05 13:05:10.292 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_31
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_GB
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-12-05 13:05:14.147
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

@@ -1,0 +1,12 @@
+
+public class Console {
+
+	private static String PROMPT = "y$: ";
+	
+	public void writeToConSole(String output)
+	{
+		System.out.print(PROMPT + output);
+	}
+	
+	
+}

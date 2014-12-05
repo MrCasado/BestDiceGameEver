@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="ConsoleTest" project="yahtzee" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="ConsoleTest" time="0.002">
+    <testcase name="write_null_to_console" classname="ConsoleTest" time="0.001"/>
+    <testcase name="read_from_console" classname="ConsoleTest" time="0.0"/>
+  </testsuite>
+</testrun>

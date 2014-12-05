@@ -1,0 +1,24 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
+public class Console {
+
+	private static String PROMPT = "y$: ";
+	
+	public void writeToConSole(String output)
+	{
+		System.out.print(PROMPT + output);
+	}
+	
+	public void readFromConSole(String output)
+	{
+		   BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
+		    String s = bufferRead.readLine();
+	 
+	}
+	
+	
+	
+}
