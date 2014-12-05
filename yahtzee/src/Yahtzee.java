@@ -4,10 +4,15 @@ import static org.junit.Assert.assertEquals;
 import java.util.List;
 
 public class Yahtzee {
-	
-	public static void main (String[] args)
+
+    public static void main (String[] args)
 	   {
-          //testing github
+
+
+
+          Console console = new Console();
+
+
 	      Dice dice1 = new Dice();
 	      Dice dice2 = new Dice();
 	      Dice dice3 = new Dice();
@@ -20,8 +25,7 @@ public class Yahtzee {
 	      dice4.roll();
 	      dice5.roll();
 	      
-	      System.out.println
-	               ("Your roll is : " +
+	      console.writeLineToConSoleWithNewLine("Your roll is : " +
 	      		          dice1.getFaceValue() + 
 	    		    " " + dice2.getFaceValue() +
 	      			" " + dice3.getFaceValue() +
@@ -34,20 +38,34 @@ public class Yahtzee {
 	    	
 	      
 	      //System.out.println("Your CHANCE LINE SCORE is " + line.getScore());
-	      
+
+          ScoreCard card;
 	      ScoreCardAssembler scoreCardAssembler = new ScoreCardAssembler();
-	      ScoreCard scoreCard = scoreCardAssembler.assembleScoreCard();
-	     
-	      List<ScoreCardLine> scoreCardLines = scoreCard.getScoreCardLines();
-	      
-	      int i=1;
-	      for(ScoreCardLine line : scoreCardLines) {
-		      line.score(dice1, dice2, dice3, dice4, dice5);
-	    	    System.out.println(i++ + " " + line.getName() + ": " + line.getDescription() + " - Score: " + line.getScore());
-	    	}
+	      card = scoreCardAssembler.assembleScoreCard();
+
+
+           List<ScoreCardLine> scoreCardLines = card.getScoreCardLines();
+           int i=1;
+           for(ScoreCardLine line : scoreCardLines) {
+               line.score(dice1, dice2, dice3, dice4, dice5);
+            }
+          printScoreCard(card, console);
+
+
 
 	      
 	      
 	   }
+
+    private static void printScoreCard(ScoreCard card, Console console)
+    {
+        List<ScoreCardLine> scoreCardLines = card.getScoreCardLines();
+
+        int i=1;
+        for(ScoreCardLine line : scoreCardLines) {
+            //line.score(dice1, dice2, dice3, dice4, dice5);
+            console.writeLineToConSoleWithNewLine(i++ + " " + line.getName() + ": " + line.getDescription() + " - Score: " + line.getScore());
+        }
+    }
 
 }
